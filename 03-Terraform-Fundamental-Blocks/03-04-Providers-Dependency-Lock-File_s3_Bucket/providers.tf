@@ -15,6 +15,14 @@ terraform {
   }
 } 
 
+terraform {
+  backend "s3" {
+    bucket = "pandu-tfstate"
+    key    = "demostate"
+    region = "us-east-1"
+  }
+}
+
 provider "aws" {
   region = "us-east-1"
   # Security Static Credentials
