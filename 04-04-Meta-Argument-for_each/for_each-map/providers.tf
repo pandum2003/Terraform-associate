@@ -18,7 +18,7 @@ terraform {
 terraform {
   backend "s3" {
     bucket = "pandu-tfstate"
-    key    = "jaiganesh-for_each"
+    key    = "jaiganesh-for_each-map"
     region = "us-east-1"
   }
 }
